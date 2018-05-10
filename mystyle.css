@@ -1,0 +1,402 @@
+*{
+    box-sizing: border-box; /*factor paading & margin into width*/
+}
+
+body{
+    background: #92bde7;
+    color: #485e74;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+
+}
+
+/*Background image for the Contact page*/
+.contact-page{
+  background-image: url("bg images/contacts-pets.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+#contact-header{
+  border: #2f3135 2px hidden;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 80vh;
+  margin-top: 10vh;
+  margin-right: 10vh;
+  align-items: center;
+  text-align: right;
+}
+
+#contact-header h2{
+  font-family: Arial,"Helvetica Neue", Helvetica, sans-serif;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+#contact-header p{
+  font-family: Arial,"Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* Start of home Page */
+/*Background image for the Home page*/
+.home-page{
+  /*background-image: url("bg images/jumping-cute-playing-animals.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;*/
+}
+
+#home-header{
+  font-family: Arial,"Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  color: #2f3135;
+  line-height: 1.6;
+  background-size: cover;
+  display: flex;
+  flex-direction:column;
+  padding: 2%;
+  justify-content:center;
+  align-items:center;
+  /*background-position: center;
+  margin-top: 5%;
+  text-align: center;*/
+}
+
+#home-header h1{
+  font-size: 50px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+#home-header p{
+  font-size: 19px;
+  border: #2f3135 2px solid;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+#home-header .button{
+  font-size: 18px;
+  text-decoration: none;
+  color: #2f3135;
+  border: #2f3135 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#home-header .button:hover{
+  background: #2f3135;
+  color: #fff;
+}
+
+.home-videos{
+  margin-top: 0;
+  justify-content:flex-start;
+  align-items:flex-start;
+}
+
+/*End of Home Page -----------------------------------------------------*/
+
+/*Start of About Page ---------------------------------------------------*/
+/*.about-page{
+  background-color: #cccccc;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}*/
+#aboutheader{
+  align-items: center;
+  font-family: Arial,"Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  color: #2f3135;
+  line-height: 1.6;
+  background-size: cover;
+  display: flex;
+  flex-direction:column;
+  padding: 2%;
+  justify-content:center;
+  align-items:center;
+}
+
+#para, .canine, .feline{
+  font-size: 19px;
+  border: #2f3135 2px solid;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-right: 20%;
+  padding: 15px;
+  color: #000000;
+}
+
+/*End of About page -----------------------------------------------------*/
+
+/*the Fun Facts page*/
+.funfacts-page{
+  background-image: url("bg images/funfacts-pet.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+#funheader h1{
+  font-family: Arial,"Helvetica Neue", Helvetica, sans-serif;
+  color: #2f3135;
+  text-decoration: underline;
+  font-size: 50px;
+  margin-left: 30px;
+}
+#funheader p{
+  font-family: Arial,"Helvetica Neue", Helvetica, sans-serif;
+  color: #2f3135;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+#fact1, #fact2, #fact3, #fact4{
+  display: grid;
+  border: #2f3135 2px solid;
+  border-spacing: 10px;
+  margin-left: 30px;
+  /*margin-right: 75%;*/
+  border-radius: 5px;
+  text-align: center;
+  color: #070919;
+}
+#fact1{
+  border-color: #440849;
+  margin-right: 60%;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+#fact2{
+  border-color: #702206;
+  margin-left: 65%;
+  padding: 5px;
+}
+#fact3{
+  border-color: #0f3091;
+  margin-right: 60%;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+#fact4{
+  border-color: #185059;
+  margin-right: 50%;
+  margin-left: 10%;
+}
+/* End of Fun Facts Page*/
+
+.container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.navbar{
+  margin: 5px;
+}
+
+.search{
+  width: 40%;
+  margin-left: 30%;
+  padding: 10px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.brand{
+    text-align: center;
+
+}
+
+.brand span{
+    color: white;
+}
+
+.wrapper{
+    box-shadow: 0 0 20px 0 rgba(72, 94,116, 0.7);
+
+}
+
+.wrapper > *{
+    padding: 1em;
+}
+/*PRODUCTS PAGE --------------------*/
+
+.fa-heart{
+  color: red;
+}
+
+/* CONTACT PAGE  -----------------  */
+.company-info{
+    background: #c9e6ff;
+}
+
+.company-info h3, .company-info ul{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact{
+    background: #f9feff;
+}
+
+.navbar-inverse{
+  margin: 0;
+  width: 100%;
+}
+#asteric{
+  color: red;
+}
+
+#opening-time{
+  color: red;
+}
+#office{
+  border-bottom: 2px solid #010211;
+
+}
+
+/*Form styles*/
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.contact form label{
+    display: block;
+}
+
+
+.contact form p{
+    margin: 0;
+}
+
+.contact form .full{
+    grid-column: 1 / 3;
+}
+
+.contact form button, .contact form textarea{
+width: 100%;
+padding: 1em;
+border: 1px solid #c9e6ff;
+}
+
+.contact form input{
+  width: 100%;
+  margin-right: 0;
+}
+
+.contact form button{
+    background: #545556;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contact form button:hover, .contact form button:focus{
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+.contact form label{
+  text-align: left;
+}
+
+.products-area form{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(150px, 200px);
+  grid-gap: 10px;
+  border-radius: 5px;
+  background-color: #92bde7;/*#2196F3;*/
+  padding: 20px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.products-area form > div{
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding:20px 0;
+  font-size: 30px;
+}
+
+#prod-head{
+  text-align: center;
+  border-bottom: 2px solid grey;
+  line-height: 1.2;
+}
+
+.products-area img{
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.products-area p{
+  font-size: 20px;
+}
+
+
+/* Footer  */
+footer{
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #171819;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+#fun-footer{
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #171819;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+/*Large Screens*/
+
+@media(min-width: 700px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .wrapper > *{
+        padding: 2em;
+    }
+
+    .company-info h3, .company-info ul, .brand{
+        text-align: left;
+    }
+
+    /*.products-area form{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(90px, 120px);*/
+}

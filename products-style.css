@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,700');
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+.items {
+  font-family: 'Fira Sans Extra Condensed', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.items img {
+  width: 60%;
+  height: 65%;
+  vertical-align: top;
+}
+
+.items figcaption {
+  padding: 5px;
+}
+
+.items h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0 0 4px;
+}
+
+.items .price {
+  margin: 8px 0;
+  font-weight: 700;
+  color: #4da3e2;
+  font-size: 1.5rem;
+}
+
+.items .icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.items .icons button {
+  margin: 2px;
+  width: 55px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.items .icons button i {
+  display: block;
+  font-size: 23.52941176px;
+  line-height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+}
+
+.items .icons button i:hover {
+  background-color: #4da3e2;
+  color: red;
+  cursor: pointer;
+}
+
+.items:hover button,
+.items.hover button {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
