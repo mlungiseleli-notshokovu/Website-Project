@@ -13,7 +13,6 @@ var newList = []; //to store specific items by id clicked
 
 function reply_clicked(clicked_id){
 
-  //alert(shoppingList[parseInt(clicked_id)].item+" - R"+shoppingList[parseInt(clicked_id)].price);
   newList.push(shoppingList[parseInt(clicked_id)]);
   var newShopSON = JSON.stringify(newList);
   localStorage.setItem("items", newShopSON);
@@ -22,27 +21,26 @@ function reply_clicked(clicked_id){
 
 function getItems(event){
   var gameJSON = localStorage.getItem("items");
-  var izinto = JSON.parse(gameJSON);
+  var item = JSON.parse(gameJSON);
 
   var sum = 0;
-  for(var i=0; i<izinto.length; i++){
-    document.getElementById("cartlist").innerHTML += "<input type='checkbox' onclick='removeItem(this.value)' name='vehicle'"+ "value="+i+">"+" " + izinto[i].item+"   :   R"+izinto[i].price.toFixed(2)+"<br>"
-    //alert(izinto[i].item)
-    sum +=izinto[i].price;
+  for(var i=0 ; i<item.length; i++){
+    document.getElementById("cartlist").innerHTML += "<input type='checkbox' onclick='removeItem(this.value)' name='vehicle'"+ "value="+i+">"+" " + item[i].item+"   :   R"+item[i].price.toFixed(2)+"<br>"
+    sum +=item[i].price;
   }
 
   document.getElementById("cartlist").innerHTML +="<span>"+"   Total Price"+": R"+sum.toFixed(2)+"</span>"+"<br>";
   document.getElementById("cartlist").innerHTML +="<br>"+"<button id='b' onclick=''>Remove selected item</button>" +"  "+" "+"<button id='b' onclick='clean()'>Remove all items</button>";
 }
 
-function removeItem(a){
+/*function removeItem(a){
   //var gameJSON = localStorage.getItem("items");
   //var izinto = JSON.parse(gameJSON);
  // var x = document.getElementById('b');
 alert(izinto[a]);
  // izinto.splice
 
-}
+}*/
 
 function clean(event){
   //removeItem();

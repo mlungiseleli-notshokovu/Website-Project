@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-    <link rel="stylesheet" href="mystyle.css">
-    <link rel="stylesheet" href="products-style.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/products-style.css">
   </head>
 
   <body class="products-page" onload="clicked()">
@@ -28,7 +28,7 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li> <a href="wishlist.html" target="_blank"><span><i class="fa fa-heart"></i> </span>Wishlist</a> </li>
+              <li> <a href="wishlist.html"><span><i class="fa fa-heart"></i> </span>Wishlist</a> </li>
               <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping cart</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -51,15 +51,17 @@
 
           <h2 id="prod-head">Cat and Dog Products</h2>
         </header>
+        
         <!-- Products starts here -->
         <section class="portfolio" data-scroll-index='3'>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
                 <h3 class="head-bar">Latest Products</h3>
+                <hr>
               </div>
             </div>
-            <div class="row">
+            <div class="row products">
               <div class="col-md-4">
                 <div class="thumbnail">
                   <img src="products/Acana_Puppy_Lrg_Breed.png" alt="Thumbnail">
@@ -285,13 +287,18 @@
       </article>
        PRODUCTS AREA END -->
 
-       <div>
+       <!--div>
          <p id="xtra"></p>
          <button onclick="clean()">Clear list</button>
-       </div>
-      <footer>
-        <p>&copy;Mlungiseleli Notshokovu 2018. All rights reserved</p>
-      </footer>
-      <script type="text/javascript" src="scripts.js"></script>
+       </div-->
+    <!-- Page Footer -->
+    <footer id="main-footer" class="grid">
+        <div>
+            <p>Made with
+                <i class="glyphicon glyphicon-heart"></i> by Mlungiseleli Notshokovu &copy; 2018</p>
+        </div>
+    </footer>
+    <!--  Footer ends here -->
+      <script type="text/javascript" src="js/scripts.js"></script>
     </body>
 </html>
