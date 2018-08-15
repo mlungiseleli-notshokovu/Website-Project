@@ -75,6 +75,15 @@ label {
 #cancel{
   margin-left: 20%;
 }
+
+#cancel a{
+  color: #f2f2f2;
+}
+
+#cancel a:hover{
+  text-decoration: none;
+  color: darkslategrey;
+}
 .btn:hover {
   background-color: #45a049;
 }
